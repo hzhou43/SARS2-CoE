@@ -1,1 +1,3 @@
-xxx
+This repository contains MD simulation input and data, in directories MDsim and Source_data.
+The files in MDsim are for an unrestrained simulation started from the end of the refinement simulation, and include the simulaton input file, the initial structure (= last frame of the refinement simulation), and the final output of the simulation.
+The excel file in Source_data contains data used to make plots in figures.
