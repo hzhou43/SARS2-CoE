@@ -9,14 +9,14 @@ set outputname          step1_prod;
 outputname              $outputname;
 
 firsttimestep           0;
-restartfreq             10000;               # 1000 steps = every 2ps
+restartfreq             10000;               # 10000 steps = every 10 ps
 dcdfreq                 10000;
 dcdUnitCell             yes;                # the file will contain unit cell info in the style of
                                             # charmm dcd files. if yes, the dcd files will contain
                                             # unit cell information in the style of charmm DCD files.
-xstFreq                 10000;               # XSTFreq: control how often the extended systen configuration
+xstFreq                 10000;              # XSTFreq: control how often the extended systen configuration
                                             # will be appended to the XST file
-outputEnergies          125;                # 125 steps = every 0.25ps
+outputEnergies          125;                # 125 steps = every 0.125ps
                                             # The number of timesteps between each energy output of NAMD
 outputTiming            10000;               # The number of timesteps between each timing output shows
                                             # time per step and time to completion
@@ -69,10 +69,10 @@ reassignFreq            500;                # reassignFreq:  use this to reassig
 reassignTemp            $temp;
 
 # Periodic Boundary conditions. 
-cellBasisVector1    82.17  0.0   0.0;        # vector to the next image
+cellBasisVector1    82.17  0.0   0.0;       # vector to the next image
 cellBasisVector2    0.0   82.17  0.0;
 cellBasisVector3    0.0    0.0   75.71;
-cellOrigin          0.0    0.0   0.0;        # the *center* of the cell
+cellOrigin          0.0    0.0   0.0;       # the *center* of the cell
 
 wrapWater               on;                 # wrap water to central cell
 wrapAll                 on;                 # wrap other molecules too
